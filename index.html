@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nairobi Maddest Market Rave 🌀</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="background-video">
+        <video autoplay muted loop playsinline>
+            <source src="https://assets.mixkit.co/videos/preview/mixkit-busy-african-market-4517-large.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+    <div id="market-stalls">
+        <div class="stall stall-1">🛍️</div>
+        <div class="stall stall-2">🍍</div>
+        <div class="stall stall-3">📿</div>
+    </div>
+    <div id="particles"></div>
+    <div id="emoji-chaos"></div>
+    <header>
+        <h1>🌀 Nairobi Maddest Market Rave 🛒</h1>
+        <p>Unleash the wildest Kenyan market party EVER! 🥁🔥</p>
+        <button id="rave-toggle">Toggle Rave Mode! 🎉</button>
+    </header>
+    <main>
+        <!-- Button Interaction Section -->
+        <section id="button-section">
+            <h2>Wanjiku’s Insane Stall</h2>
+            <button id="market-button">Snag a Maaaad Deal! 🌩️</button>
+            <p id="button-feedback">Click to vibe with Wanjiku’s chaos!</p>
+        </section>
+
+        <!-- Painting Section -->
+        <section id="painting-section">
+            <h2>Paint the Rave Wall 🎨⚡️</h2>
+            <p>Go nuts like Kibera’s mural kings! Spray Maasai Party vibes, neon colors, or Rave Spray!</p>
+            <div id="painting-controls">
+                <label>Pick a Neon Vibe: </label>
+                <input type="color" id="color-picker" value="#ff3333">
+                <button id="bead-brush">Maasai Party Brush</button>
+                <button id="rave-spray">Rave Spray</button>
+                <button id="clear-canvas">Reset the Madness</button>
+            </div>
+            <canvas id="painting-canvas" width="600" height="400"></canvas>
+        </section>
+
+        <!-- Treasure Hunt Game -->
+        <section id="treasure-section">
+            <h2>Market Treasure Frenzy 🕵️‍♂️</h2>
+            <button id="treasure-button">Hunt the Wild Loot!</button>
+            <p id="treasure-feedback">Grab the maddest market gems!</p>
+        </section>
+
+        <!-- Image Gallery Section -->
+        <section id="gallery-section">
+            <h2>Market Rave Slideshow</h2>
+            <div id="gallery">
+                <img id="gallery-image" src="https://images.unsplash.com/photo-1598973563502-29e39f989b4a" alt="Vibrant Nairobi market with colorful stalls">
+                <div id="gallery-controls">
+                    <button id="prev-btn">👈 Rewind</button>
+                    <button id="next-btn">Fast Forward 👉</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Accordion Section -->
+        <section id="accordion-section">
+            <h2>Market Legends</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">Kamau’s Bead Blitz</button>
+                    <div class="accordion-content">Beads so lit, they glow in the dark! 🌟</div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Njeri’s Spice Storm</button>
+                    <div class="accordion-content">Spices that’ll blow your mind! 💥</div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Otieno’s Fruit Rave</button>
+                    <div class="accordion-content">Mangoes that party all night! 🥭</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form Validation Section -->
+        <section id="form-section">
+            <h2>Join the Rave Squad</h2>
+            <form id="market-form">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="error" id="name-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error" id="email-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password (8+ chars):</label>
+                    <input type="password" id="password" name="password" required>
+                    <span class="error" id="password-error"></span>
+                </div>
+                <button type="submit">Join the Madness! ⚡️</button>
+            </form>
+            <p id="form-feedback"></p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Nairobi Maddest Market Rave by Prince Lailan - JavaScript Insanity ✨</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
